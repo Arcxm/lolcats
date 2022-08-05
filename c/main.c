@@ -43,6 +43,8 @@ int main(int argc, char **argv) {
         for (size_t i = 0; i < sz; ++i) {
             putc_with_rgb(input[i], rainbow(FREQ, i));
         }
+
+        return EXIT_SUCCESS;
     } else {
         return EXIT_FAILURE;
     }
