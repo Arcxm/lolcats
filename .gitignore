@@ -1,3 +1,7 @@
+# Executables
+
+*.exe
+
 # Rust
 
 debug/
