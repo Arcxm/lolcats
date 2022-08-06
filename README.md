@@ -5,6 +5,7 @@ Bare minimum implementations of lolcat in different programming languages.
 
 - [C](c)
 - [Go](go)
+- [Kotlin](kotlin)
 - [Objective-C](objective-c)
 - [PHP](php)
 - [Python](python)
