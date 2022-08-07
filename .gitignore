@@ -2,6 +2,11 @@
 
 *.exe
 
+# Java
+
+*.class
+*.jar
+
 # Rust
 
 debug/

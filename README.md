@@ -8,6 +8,7 @@ Bare minimum implementations of lolcat in different programming languages.
 - [C#](csharp)
 - [Dart](dart)
 - [Go](go)
+- [Java](java)
 - [JavaScript](javascript)
 - [Kotlin](kotlin)
 - [Objective-C](objective-c)
