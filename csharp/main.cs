@@ -1,6 +1,6 @@
 using System;
 
-namespace loclat {
+namespace lolcat {
     struct RGB {
         public byte r { get; }
         public byte g { get; }
