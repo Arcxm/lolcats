@@ -18,21 +18,14 @@ const RGB = struct {
 
     /// TODO: There HAS to be a better way than this built-in casts abomination!!
     pub fn rainbow(frequency: f64, i: usize) RGB {
-        const PI_THIRDS: f64 = math.pi / @intToFloat(f64, 3);
+        const PI_THIRDS: f64 = math.pi / @as(f64, @floatFromInt(3));
 
-        return RGB {
-            .r = @floatToInt(u8, math.sin(frequency * @intToFloat(f64, i)) * 127 + 128),
-            .g = @floatToInt(u8, math.sin(frequency * @intToFloat(f64, i) + 2 * PI_THIRDS) * 127 + 128),
-            .b = @floatToInt(u8, math.sin(frequency * @intToFloat(f64, i) + 4 * PI_THIRDS) * 127 + 128)
-        };
+        return RGB{ .r = @as(u8, @intFromFloat(math.sin(frequency * @as(f64, @floatFromInt(i))) * 127 + 128)), .g = @as(u8, @intFromFloat(math.sin(frequency * @as(f64, @floatFromInt(i)) + 2 * PI_THIRDS) * 127 + 128)), .b = @as(u8, @intFromFloat(math.sin(frequency * @as(f64, @floatFromInt(i)) + 4 * PI_THIRDS) * 127 + 128)) };
     }
 };
 
 fn putc_with_rgb(writer: fs.File.Writer, c: u8, color: RGB) !void {
-    try writer.print("\x1B[38;2;{d};{d};{d}m{c}{s}", .{
-        color.r, color.g, color.b,
-        c, COLOR_RESET
-    });
+    try writer.print("\x1B[38;2;{d};{d};{d}m{c}{s}", .{ color.r, color.g, color.b, c, COLOR_RESET });
 }
 
 pub fn main() !void {
@@ -52,7 +45,7 @@ pub fn main() !void {
         if (maybe_arg) |input| {
             var stdoutWriter = io.getStdOut().writer();
 
-            for (input) |c, index| {
+            for (input, 0..) |c, index| {
                 try putc_with_rgb(stdoutWriter, c, RGB.rainbow(FREQ, index));
             }
         } else {
