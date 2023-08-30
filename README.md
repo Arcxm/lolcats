@@ -35,6 +35,7 @@ Each subfolder contains a README with details on how to build and run.
 - [Kotlin](kotlin)
 - [Lua](lua)
 - [Objective-C](objective-c)
+- [Pascal](pascal)
 - [PHP](php)
 - [Python](python)
 - [Rust](rust)
