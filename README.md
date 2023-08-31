@@ -29,6 +29,7 @@ Each subfolder contains a README with details on how to build and run.
 - [C++](cpp)
 - [C#](csharp)
 - [Dart](dart)
+- [Fortran](fortran)
 - [Go](go)
 - [Java](java)
 - [JavaScript](javascript)
