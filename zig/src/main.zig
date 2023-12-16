@@ -37,13 +37,13 @@ pub fn main() !void {
     defer args.deinit();
 
     // Skip the first argument (the name of the executable itself)
-    var skippedProg = args.skip();
+    const skippedProg = args.skip();
     if (skippedProg) {
         // Check if at least one other command line argument was provided
-        var maybe_arg = args.next();
+        const maybe_arg = args.next();
 
         if (maybe_arg) |input| {
-            var stdoutWriter = io.getStdOut().writer();
+            const stdoutWriter = io.getStdOut().writer();
 
             for (input, 0..) |c, index| {
                 try putc_with_rgb(stdoutWriter, c, RGB.rainbow(FREQ, index));
