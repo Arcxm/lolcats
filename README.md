@@ -39,5 +39,6 @@ Each subfolder contains a README with details on how to build and run.
 - [Pascal](pascal)
 - [PHP](php)
 - [Python](python)
+- [Ruby](ruby)
 - [Rust](rust)
 - [Zig](zig)
