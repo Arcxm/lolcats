@@ -35,6 +35,7 @@ Each subfolder contains a README with details on how to build and run.
 - [JavaScript](javascript)
 - [Kotlin](kotlin)
 - [Lua](lua)
+- [Nim](nim)
 - [Objective-C](objective-c)
 - [Pascal](pascal)
 - [PHP](php)
