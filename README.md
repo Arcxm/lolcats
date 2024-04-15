@@ -25,6 +25,7 @@ $ ./lolcat "Hello, World!"
 
 Each subfolder contains a README with details on how to build and run.
 
+- [Ada](ada)
 - [C](c)
 - [C++](cpp)
 - [C#](csharp)
