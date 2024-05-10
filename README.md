@@ -39,6 +39,7 @@ Each subfolder contains a README with details on how to build and run.
 - [Nim](nim)
 - [Objective-C](objective-c)
 - [Pascal](pascal)
+- [Perl](perl)
 - [PHP](php)
 - [Python](python)
 - [Ruby](ruby)
