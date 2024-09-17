@@ -45,4 +45,5 @@ Each subfolder contains a README with details on how to build and run.
 - [Python](python)
 - [Ruby](ruby)
 - [Rust](rust)
+- [Visual Basic](vb)
 - [Zig](zig)
