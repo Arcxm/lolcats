@@ -1,4 +1,5 @@
 # lolcats
+
 Bare minimum implementations of lolcat in different programming languages.
 
 ## Table of Contents
@@ -30,6 +31,7 @@ Each subfolder contains a README with details on how to build and run.
 - [C3](c3)
 - [C++](cpp)
 - [C#](csharp)
+- [D](d)
 - [Dart](dart)
 - [Fortran](fortran)
 - [Go](go)
